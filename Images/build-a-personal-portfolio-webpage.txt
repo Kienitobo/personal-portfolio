@@ -1,0 +1,376 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/98419d1ec4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="welcome-section" class="background-image">
+        <div class="overlay">
+          <div class="profile-pic">
+            <img src="Images\Passport photo zuri.jpg" alt="profile picture" />
+          </div>
+          <div class="profile-text">
+            <h4 class="subtext">Hi! I am</h4>
+            <h1 class="main-text">Kieni Edojah</h1>
+            <h4 class="subtext2">A Front End Developer</h4>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-row">
+          <div class="project-tile">
+            <div class="image">
+              <img
+                class="chessboard"
+                src="Images\5 x 5 chess board.png"
+                alt="Chessboard"
+              />
+            </div>
+            <div class="text">
+              <h5>
+                <a href="https://codepen.io/kienitobo/pen/PoQRGow">
+                  5 x 5 Chessboard</a
+                >
+              </h5>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="image">
+              <img
+                class="landing-page"
+                src="Images\Responsive Landing Page.png"
+                alt="Landing Page"
+              />
+            </div>
+            <div class="text">
+              <h5>
+                <a href="https://kienitobo.github.io/Huddle-Landing-Page/">
+                  Responsive Landing Page</a
+                >
+              </h5>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="image">
+              <img
+                class="registration-form"
+                src="Images\Responsive Registration form.png"
+                alt="Registration Form"
+              />
+            </div>
+            <div class="text">
+              <h5>
+                <a
+                  href="https://kienitobo.github.io/Responsive-Registration-Form/"
+                >
+                  Responsive Registration Form</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul>
+          <li>Email: enitobo@gmail.com</li>
+          <li>Phone: +2347032905257</li>
+        </ul>
+        <div>
+          <a href="https://linkedin.com/in/kieni-edojah"
+            >
+            <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p></a
+          >
+        </div>
+        <div>
+          <a id="profile-link" href="https://github.com/Kienitobo"
+           target="_blank" >
+            <p><i class="fa-brands fa-square-github"></i> GitHub</p></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><i class="fa-solid fa-copyright"></i> Copyright 2021 Kieni Edojah</p>
+    </footer>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  z-index: 1;
+  background: linear-gradient(90deg, beige, rgb(212, 198, 200));
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 5px;
+  padding: 5px;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 6px 16px;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+.background-image {
+  background-image: url("Images/background-image.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+main {
+  position: relative;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 90%;
+  /*opacity: 0;
+  transition:opacity 0.5s ease-in-out;
+  
+}
+.overlay:hover {
+  opacity: 1;*/
+}
+
+.overlay > * {
+  transform: translateX(20px);
+  transition: transform 0.5s;
+}
+
+.overlay > *:hover {
+  transform: translateY(0);
+}
+
+.profile-pic {
+  width: 35vw;
+  margin: 10%;
+}
+.profile-pic img {
+  width: 100%;
+  border: 1px transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-text {
+  padding: 10px 0;
+  margin: 5px 0;
+  font-size: 4em;
+  color: aliceblue;
+}
+.subtext {
+  font-size: 20px;
+  color: aliceblue;
+}
+.subtext2 {
+  font-size: 25px;
+  color: darkcyan;
+}
+
+#projects, #contact {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#projects h2, #contact h2 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3em;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.project-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+margin:0 auto;
+justify-content: space-evenly;
+}
+.project-tile {
+    display: flex;
+    flex-direction: column;
+
+  width: 30%;
+  margin:5px;
+  padding:5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.registration-form,
+.landing-page,
+.chessboard {
+  width: 100%;
+}
+.project-tile h5{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size:20px;
+    text-align: center;
+    padding:5px 0;
+    
+}
+
+.project-tile h5 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.project-tile h5 a:hover{
+    color: cadetblue;
+}
+
+#contact p{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size:20px;
+    text-align: center;
+    padding:5px 0;
+
+}
+#contact ul li{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size:20px;
+    text-align: center;
+    padding:5px 0;
+
+}
+#contact a{
+    text-decoration: none;
+    padding:5px 0;
+
+}
+
+footer{
+    height:40%;
+    text-align: center;
+    margin:10px auto;
+    padding:20px 0;
+}
+
+footer p{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size:15px;
+    text-align: center;
+    padding:5px 0;
+}
+
+@media only screen and (max-width:600px){
+    .project-tile h5{
+        
+        font-size:13px;
+    }
+    .subtext2 {
+        font-size: 15px;
+        
+      }
+      .main-text {
+        font-size: 3em;
+        color: aliceblue;
+      }
+      .subtext {
+        font-size: 15px;
+        
+      }
+
+      .project-row {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+      margin:0 auto;
+      justify-content: space-evenly;
+      }
+      .project-tile {
+        display: flex;
+        flex-direction: column;
+    
+      width: 80%;
+      margin:5px auto;
+      padding:5px;
+      
+    }
+}
+
+** end of undefined **
+
