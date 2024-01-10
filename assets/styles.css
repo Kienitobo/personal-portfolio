@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+#copyright{
+  font-size: x-small;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 nav {
   position: fixed;
