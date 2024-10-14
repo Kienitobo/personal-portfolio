@@ -8,6 +8,32 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+/*----------Sticky navbar-------------*/
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+}
+
+
+/* Page content */
+.content {
+  padding-top:16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/*===================================================================*/
+
 .hamburger {
   width: 20px;
   height: 4px;
@@ -22,8 +48,8 @@
 nav {
   background: linear-gradient(
     90deg,
-    rgb(226, 226, 200, 0.4),
-    rgb(181, 157, 161)
+    rgba(226, 226, 200, 1),
+    rgba(181, 157, 161,1)
   );
 }
 
@@ -42,10 +68,10 @@ nav {
 .background-image {
   background: linear-gradient(
       90deg,
-      rgb(226, 226, 200, 0.4),
-      rgb(181, 157, 161)
+      rgba(226, 226, 200, 0.4),
+      rgba(181, 157, 161,1)
     ),
-    url("background-image.jpg") no-repeat center;
+    url(assets/background-image.jpg) no-repeat center;
   object-fit: cover;
   background-size: 100% 100%;
 }
@@ -98,8 +124,8 @@ nav {
 #contact {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -110,13 +136,13 @@ nav {
   font-size: 2em;
   padding: 10px 0;
   margin: 10px 0;
+  color: darkcyan;
 }
 .project-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
+  margin: 1em;
   justify-content: space-evenly;
 }
 .project-tile {
@@ -124,14 +150,13 @@ nav {
   flex-direction: column;
   width: 30%;
   height: 350px;
-  margin: 5px;
-  padding: 5px;
+  padding: 1.5em;
   border: 1px solid transparent;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image {
-  height: 300px;
+  height: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +165,9 @@ nav {
 .landing-page,
 .chessboard {
   width: 100%;
+}
+.chessboard{
+  height: 80%;
 }
 .project-tile h5 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -171,16 +199,9 @@ nav {
   padding: 5px 0;
   list-style-type: none;
 }
-#contact a {
-  text-decoration: none;
-  padding: 5px 0;
-}
 
 footer {
-  height: 40%;
   text-align: center;
-  margin: 10px auto;
-  padding: 20px 0;
 }
 
 footer p {
@@ -195,29 +216,28 @@ footer p {
     font-size: 13px;
   }
   .subtext2 {
-    font-size: 15px;
+    font-size: 1em;
   }
   .main-text {
-    font-size: 3em;
+    font-size: 1.8em;
     color: aliceblue;
   }
   .subtext {
-    font-size: 15px;
+    font-size: 1em;
   }
 
   .project-row {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .project-tile {
     display: flex;
     flex-direction: column;
-
-    width: 80%;
-    margin: 5px auto;
-    padding: 5px;
+    width: 90%;
+    margin: 2em auto;
   }
 }
