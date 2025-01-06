@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/css/survey.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title" class="text-center">YOUR FREE SIZE GUIDE</h1>
+      <h5 id="description">
+        Complete this form to receive you FREE SIZE GUIDE
+      </h5>
+    </div>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name" class="input-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-control"
+          placeholder="Kieni"
+          required
+        /><br />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email" class="input-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="me@kieni.com"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number" class="input-label"
+          >Phone Number</label
+        >
+        <input
+          type="tel"
+          id="number"
+          name="number"
+          min="11"
+          max="13"
+          class="form-control"
+          placeholder="1113246789"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <p>Which option best describes your current skill level?</p>
+        <select id="dropdown" name="skill" class="form-control" required>
+          <option disabled selected value>Select current skill level</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="experienced">Experienced</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Would you like to receive emails about new patterns, techniques and
+          more?
+        </p>
+
+        <div class="radio">
+          <span class="input-radio"
+            ><input
+              id="definitely"
+              name="opt-in"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked /></span
+          ><span class="radio-label"
+            ><label for="definitely" class="check-label">Definitely</label>
+          </span>
+        </div>
+
+        <div class="radio">
+            <span class="input-radio"
+              ><input
+              id="no"
+              name="opt-in"
+              value="no"
+              type="radio"
+              class="input-radio"
+            /></span
+            ><span class="radio-label"
+              ><label for="no" class="check-label">No</label>
+            </span>
+          </div>
+        
+      </div>
+      <div class="form-group">
+        <p>
+          Which of these would you like to receive in your inbox? (Select all
+          that apply)
+        </p>
+        <div class="checkbox">
+            <span class="input-checkbox"
+              ><input
+              type="checkbox"
+              value="crochet-patterns"
+              id="crochet"
+              name="prefer"
+            /></span
+            ><span class="checkbox-label"
+              > <label for="crochet" class="check-label">Crochet Patterns </label>
+            </span>
+          </div>
+       
+
+          <div class="checkbox">
+            <span class="input-checkbox"
+              ><input
+              type="checkbox"
+              value="knitting-patterns"
+              id="knitting"
+              name="prefer"
+            /></span
+            ><span class="checkbox-label"
+              ><label for="knitting" class="check-label">Knitting Patterns </label>
+            </span>
+          </div>
+        
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          class="textarea"
+          id="comments"
+          name="comment"
+          placeholder="Enter your comment here"
+        ></textarea>
+      </div>
+      <div class="form-group button">
+        <button type="submit" class="submit-button" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
