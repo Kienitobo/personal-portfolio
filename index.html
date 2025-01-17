@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
             <li>
-              <a class="nav-link px-4" href="#welcome-section">About</a>
+              <a class="nav-link px-4" href="#about">About</a>
             </li>
             <li>
               <a class="nav-link px-4" href="#projects">Projects</a>
@@ -90,12 +90,49 @@
       <section id="welcome-section" class="background-image">
         <div class="overlay">
           <div class="profile-pic">
-            <img src="assets/Passport-photo-zuri.jpg" alt="profile picture" />
+            <img src="assets/My image.jpg" alt="profile picture" />
           </div>
           <div class="profile-text">
-            <h4 class="subtext">Hi! I am</h4>
             <h1 class="main-text">Kieni Edojah</h1>
-            <h4 class="subtext2">A Front End Developer</h4>
+            <p class="subtext2">Frontend Developer</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2 class="text-center pt-5">About Me</h2>
+        <div class="project-row">
+          <div class="about-text">
+            <p>
+              Hi, I’m Kieni Edojah, a passionate Front-End Developer with a
+              strong foundation in building responsive, user-friendly websites
+              that blend functionality with aesthetics. My journey into
+              front-end development began with a simple yet transformative goal:
+              to create a website for my business, House of Kieni's Fashion.
+            </p>
+
+            <p class="">
+              After earning my Bachelor’s in Electrical/Electronic Engineering,
+              I embraced my creative side by starting a small knitwear
+              manufacturing business. I wanted to expand its reach, so I decided
+              to create a website. I started with no-code tools, but soon
+              realized the potential of custom development and began learning
+              programming to fully tailor my digital creations. This journey of
+              discovery led me to pursue advanced certifications in Technical
+              Systems Analysis and Operations Management, where I honed my
+              analytical and problem-solving skills. I gained a deeper
+              understanding of system workflows and learned how to transform
+              ideas into seamless digital solutions.
+            </p>
+
+            <p>
+              I have developed strong skills in tools and technologies such as
+              HTML5, CSS3, JavaScript, Bootstrap, and Sass. While I’ve learned
+              the fundamentals of Sass, I am eager to apply it in real-world
+              projects. I am also actively learning React.js to expand my
+              expertise and take on more dynamic and interactive development
+              challenges. My goal is always to deliver exceptional user
+              experiences and solve real-world problems.
+            </p>
           </div>
         </div>
       </section>
@@ -154,16 +191,77 @@
           </div>
         </div>
       </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at:</p>
-        <ul>
-          <li>Email: enitobo@gmail.com</li>
-          <li>Phone: +15193174762</li>
-        </ul>
+      <section class="mt-5  pb-5 pt-3" id="contact">
+        <h2>Let's Connect</h2>
+
+        <form
+          id="form"
+          class="pb-5 pt-3 ps-5 pe-5"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <p class="pt-3 pb-3">
+            I'm open to employment opportunities and would love to collaborate.
+          </p>
+          <hr class="pb-3" />
+          <input
+            type="hidden"
+            name="access_key"
+            value="e1af74c1-062d-4a80-b874-ba5db2b93563"
+          />
+          <div class="form-group">
+            <div class="form-group row pt-3 pb-3">
+              <label class="col-sm-3" for="name">Name</label>
+              <input
+                class="col-md-9"
+                name="name"
+                id="name"
+                type="text"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+
+            <div class="form-group row pb-3">
+              <label class="col-sm-3" for="email">Email</label>
+              <input
+                class="col-sm-9"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@yourmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3" for="message">Message</label>
+              <textarea
+                class="col-sm-9"
+                rows="3"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Write here..."
+                required
+              ></textarea>
+            </div>
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+            <div class="form-group text-center">
+              <button class="btn btn-primary mt-5 pe-5 ps-5" type="submit">
+                Send <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
-    <footer class="">
+    <footer>
       <p id="copyright"></p>
     </footer>
     <script src="/js/scripts.js"></script>

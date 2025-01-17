@@ -1,6 +1,7 @@
 img{
     border-radius: 0 75px;
     margin: 30px 0 20px 0 ;
+    border: 1px solid rgba(158, 193, 174, 0.816);
     animation: bounce 5s infinite;
   }
   
@@ -10,9 +11,9 @@ img{
   }
   
   body{
-    background: linear-gradient(to right,slateblue,lightblue);
+    background: linear-gradient(to right,rgb(180, 196, 184),rgb(180, 176, 175));
     font-family: 'Trebuchet MS';
-    color:white;
+    color:#034339;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,7 +21,7 @@ img{
   }
 
  .social{
-    color: slateblue;
+    color: #054d3d;
     padding: 2px;
    
  }
@@ -33,7 +34,7 @@ img{
     display: block;
     text-align: center;
     margin: 10px;
-    color: slateblue;
+    color: #054d3d;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.5s ease;
@@ -41,7 +42,7 @@ img{
   }
   
   .links:hover{
-    color: steelblue;
+    color: rgb(71, 111, 104);
     background-color: beige;
     transform:scale(1.05);
   }
