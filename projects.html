@@ -23,7 +23,7 @@
       src="https://kit.fontawesome.com/98419d1ec4.js"
       crossorigin="anonymous"
     ></script>
-    <title>My Portfolio</title>
+    <title>My Projects</title>
   </head>
   <body>
     <nav id="navbar" class="navbar navbar-expand-lg nav-underline sticky-top">
@@ -53,14 +53,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            
             <li>
-              <a class="nav-link px-4" href="#">Home</a>
-            </li>
+                <a class="nav-link px-4" href="index.html">Home</a>
+              </li>
             <li>
               <a class="nav-link px-4" href="about.html">About</a>
             </li>
             <li>
-              <a class="nav-link px-4" href="projects.html">Projects</a>
+              <a class="nav-link px-4" href="#">Projects</a>
             </li>
             <li>
               <a class="nav-link px-4" href="#contact">Contact</a>
@@ -90,24 +91,8 @@
     </nav>
 
     <main class="content">
-      <section id="welcome-section" class="background-image">
-        <div class="overlay2">
-          <div class="profile-pic">
-            <img src="assets/My image.jpg" alt="profile picture" />
-          </div>
-          </div>
-          <div class="overlay">
-          <div class="profile-text">
-            <h1 class="main-text">Kieni Edojah</h1>
-            <p class="subtext2">Frontend Developer</p>
-            
-            <p class="subtext3">I craft clean, innovative, and responsive designs to bring your vision to life and your brand to the forefront.</p>
-            <a class="about-link" href="about.html">Read more about me</a>
-
-          </div>
-        </div>
-      </section>
-      
+     
+     
       <section id="projects">
         <h2>Projects</h2>
         <div class="project-row">
@@ -163,75 +148,7 @@
           </div>
         </div>
       </section>
-      <section class="mt-5  pb-5 pt-3" id="contact">
-        <h2>Let's Connect</h2>
-
-        <form
-          id="form"
-          class="pb-5 pt-3 ps-5 pe-5"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <p class="pt-3 pb-3">
-            I'm open to employment opportunities and would love to collaborate.
-          </p>
-          <hr class="pb-3" />
-          <input
-            type="hidden"
-            name="access_key"
-            value="e1af74c1-062d-4a80-b874-ba5db2b93563"
-          />
-          <div class="form-group">
-            <div class="form-group row pt-3 pb-3">
-              <label class="col-sm-3" for="name">Name</label>
-              <input
-                class="col-md-9"
-                name="name"
-                id="name"
-                type="text"
-                placeholder="John Smith"
-                required
-              />
-            </div>
-
-            <div class="form-group row pb-3">
-              <label class="col-sm-3" for="email">Email</label>
-              <input
-                class="col-sm-9"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="you@yourmail.com"
-                required
-              />
-            </div>
-
-            <div class="form-group row">
-              <label class="col-sm-3" for="message">Message</label>
-              <textarea
-                class="col-sm-9"
-                rows="3"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Write here..."
-                required
-              ></textarea>
-            </div>
-            <input
-              type="checkbox"
-              name="botcheck"
-              class="hidden"
-              style="display: none"
-            />
-            <div class="form-group text-center">
-              <button class="btn btn-primary mt-5 pe-5 ps-5" type="submit">
-                Send <i class="fa-regular fa-paper-plane"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </section>
+     
     </main>
     <footer>
       <p id="copyright"></p>

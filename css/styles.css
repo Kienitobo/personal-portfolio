@@ -52,17 +52,40 @@ nav {
       no-repeat center;
   object-fit: cover;
   background-size: 100% 100%;
+  
 }
+
+
 .container {
   padding: 0;
 }
 
-.overlay {
+.content{
+  position: relative;
+  min-height: 100vh;
+}
+
+#welcome-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  overflow: hidden;
+  padding-left: 32px;
+  padding-right: 32px;
+  
+}
+.about-img{
+  width:30%;
+  border-radius: 50%;
+
+}
+
+.about-img-div{
+  width: 50%;
+}
+
+.overlay {
+ width: 50%;
 }
 
 .overlay > * {
@@ -74,9 +97,22 @@ nav {
   transform: translateY(0);
 }
 
+.overlay2 {
+ width: 40%;
+}
+
+.overlay2 > * {
+  transform: translateX(-10%);
+  transition: transform 0.4s;
+}
+
+.overlay2 > *:hover {
+  transform: translateY(0);
+}
+
 .profile-pic {
-  width: 35%;
-  margin: 5%;
+  width: 95%;
+  margin: 10%;
 }
 .profile-pic img {
   width: 100%;
@@ -84,26 +120,44 @@ nav {
   border-radius: 50%;
 }
 .profile-text {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .main-text {
-  font-size: 5vw;
+  font-size: 4vw;
   color: aliceblue;
   width: 100%;
 }
-.subtext {
-  font-size: 2vw;
-  color: aliceblue;
-  width: 100%;
-}
+
 .subtext2 {
-  font-size: 1.4em;
+  font-size: 2.4vw;
   color: darkcyan;
   width: 100%;
+  padding-bottom: 2em;
+
+}
+.subtext3 {
+  font-size: 2.4vw;
+  font-style: oblique;
+  color: aliceblue;
+  width: 100%;
+  font-weight: lighter;
+
+}
+
+.about-link {
+  font-size: 1.4vw;
+  color: darkcyan;
+  width: 100%;
+  padding-bottom: 2em;
+
+}
+
+.about-link:hover{
+  color: rgb(7, 70, 72);
 }
 
 #projects,
@@ -228,35 +282,28 @@ footer {
     rgba(181, 157, 161, 1)
   );
   color: darkcyan;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 footer p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
   text-align: center;
-  padding: 5px 0;
-  margin-bottom: 0;
+  padding: 15px ;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 600px) {
   .project-tile h5 {
     font-size: 13px;
   }
-  .subtext2 {
-    font-size: 1em;
-  }
-  .main-text {
-    font-size: 1.8em;
-    color: aliceblue;
-  }
-  .subtext {
-    font-size: 1em;
-  }
-
+ 
+.about-text{
+  width: 90%;
+}
   .project-row {
     display: flex;
     flex-direction: column;
@@ -274,4 +321,12 @@ footer p {
   form {
     width: 80%;
   }
+  .subtext2 {
+    
+    padding-bottom: 0.08em;
+  
+  }
+  .main-text{padding-top: 0.8em;}
+    
+  
 }
