@@ -169,6 +169,16 @@ nav {
   justify-content: center;
   overflow: hidden;
 }
+.carousel{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner{
+  width: 70%;
+}
+
+
 
 #projects h2,
 #contact h2,
@@ -191,18 +201,14 @@ nav {
   margin: 1em;
   justify-content: space-evenly;
 }
-.project-tile {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 350px;
-  padding: 1.5em;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+.carousel-img-row{
+  height: 70vh;
+  
 }
-.image {
-  height: 270px;
+.carousel-img {
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,9 +218,7 @@ nav {
 .chessboard {
   width: 100%;
 }
-.chessboard {
-  height: 80%;
-}
+
 
 .project-tile h5 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

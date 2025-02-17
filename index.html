@@ -16,7 +16,20 @@
     <link rel="stylesheet" href="/css/styles.css" />
 
     <!---------FAVICON------------>
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-----------FONTAWESOME--------->
     <script
@@ -28,12 +41,14 @@
   <body>
     <nav id="navbar" class="navbar navbar-expand-lg nav-underline sticky-top">
       <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="favicon-32x32.png"
+            alt="Kieni Edojah Logo"
+            width="30"
+            height="30"
+          />
+        </a>
         <!-- Toggle button -->
         <button
           class="navbar-toggler"
@@ -95,75 +110,131 @@
           <div class="profile-pic">
             <img src="assets/My image.jpg" alt="profile picture" />
           </div>
-          </div>
-          <div class="overlay">
+        </div>
+        <div class="overlay">
           <div class="profile-text">
             <h1 class="main-text">Kieni Edojah</h1>
             <p class="subtext2">Frontend Developer</p>
-            
-            <p class="subtext3">I craft clean, innovative, and responsive designs to bring your vision to life and your brand to the forefront.</p>
-            <a class="about-link" href="about.html">Read more about me</a>
 
+            <p class="subtext3">
+              I craft clean, innovative, and responsive designs to bring your
+              vision to life and your brand to the forefront.
+            </p>
+            <a class="about-link" href="about.html">Read more about me</a>
           </div>
         </div>
       </section>
-      
-      <section id="projects">
+
+      <!---Projects-->
+
+      <!----->
+      <section id="projects" class="mt-5">
         <h2>Projects</h2>
-        <div class="project-row">
-          <div class="project-tile">
-            <div class="image">
-              <img
-                class="chessboard"
-                src="assets/5-x-5-chess-board.png"
-                alt="Chessboard"
-              />
+
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide mt-5">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active "
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row carousel-img-row">
+                <div class="carousel-img col-sm-12 col-md-6">
+                  <img
+                    src="assets/Responsive-Registration-form.png"
+                    class="w-100 registration-form"
+                    alt="Registration Form"
+                  />
+                </div>
+                <div class="project-tile col-sm-12 col-md-6">
+                  <h5>
+                    <a
+                      href="https://kienitobo.github.io/Responsive-Registration-Form/"
+                    >
+                      Responsive Registration Form</a
+                    >
+                  </h5>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <h5>
-                <a href="https://codepen.io/kienitobo/pen/PoQRGow">
-                  5 x 5 Chessboard</a
-                >
-              </h5>
+            <div class="carousel-item">
+              <div class="row carousel-img-row">
+                <div class="carousel-img col-md-6 col-sm-12">
+                  <img
+                    src="assets/Responsive-Landing-Page.png"
+                    class="w-100 landing-page"
+                    alt="Landing Page"
+                  />
+                </div>
+                <div class="project-tile col-md-6 col-sm-12">
+                  <h5>
+                    <a href="https://kienitobo.github.io/Huddle-Landing-Page/">
+                      Responsive Landing Page</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row carousel-img-row">
+                <div class="carousel-img col-md-6 col-sm-12">
+                  <img
+                    src="assets/5-x-5-chess-board.png"
+                    class=" w-100 chessboard"
+                    alt="chessboard"
+                  />
+                </div>
+                <div class="project-tile col-sm-12 col-md-6">
+                  <h5>
+                    <a href="https://codepen.io/kienitobo/pen/PoQRGow">
+                      5 x 5 Chessboard</a
+                    >
+                  </h5>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="project-tile">
-            <div class="image">
-              <img
-                class="landing-page"
-                src="assets/Responsive-Landing-Page.png"
-                alt="Landing Page"
-              />
-            </div>
-            <div class="text">
-              <h5>
-                <a href="https://kienitobo.github.io/Huddle-Landing-Page/">
-                  Responsive Landing Page</a
-                >
-              </h5>
-            </div>
-          </div>
-          <div class="project-tile">
-            <div class="image">
-              <img
-                class="registration-form"
-                src="assets/Responsive-Registration-form.png"
-                alt="Registration Form"
-              />
-            </div>
-            <div class="text">
-              <h5>
-                <a
-                  href="https://kienitobo.github.io/Responsive-Registration-Form/"
-                >
-                  Responsive Registration Form</a
-                >
-              </h5>
-            </div>
-          </div>
+          <button
+            class="carousel-control-prev "
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+
+       
       </section>
-      <section class="mt-5  pb-5 pt-3" id="contact">
+      <section class="mt-5 pb-5 pt-3" id="contact">
         <h2>Let's Connect</h2>
 
         <form
