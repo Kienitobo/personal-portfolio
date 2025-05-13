@@ -137,6 +137,7 @@ nav {
   color: darkcyan;
   width: 100%;
   padding-bottom: 2em;
+  line-height: 1.15;
 
 }
 .subtext3 {
@@ -145,6 +146,7 @@ nav {
   color: aliceblue;
   width: 100%;
   font-weight: lighter;
+  line-height: 1.0;
 
 }
 
