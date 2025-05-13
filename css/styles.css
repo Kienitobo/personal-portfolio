@@ -292,6 +292,42 @@ footer {
   
 }
 
+
+.thank-you{
+  width:90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.thank-you>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you h5, .thank-you p{
+  padding: 5px;
+  margin-bottom: 5px;
+
+}
+
+.thank-you a{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.thank-you a:hover{
+  text-decoration: underline;
+}
+
+
 footer p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #fdedf6 !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}
+
+.check{
+    background-color: #481731;
+    border: none;
+    color: white ;
+    padding: 8px 32px;
+    border-radius: 5px;
+}
+
+.check:hover{
+    background-color: #782752;
+}
+
+.card{
+    width: 18rem;
+}

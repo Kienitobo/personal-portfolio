@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(61, 61, 70);
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+  h1{
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em !important;
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 25px 0 10px 0;
+  }
+  .phone-cont {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    height: 75vh;
+    border-radius: 15px;
+  }
+  .input-area {
+    display: flex;
+    background-color: gainsboro;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 68%;
+    padding: 5px;
+    margin: 15px 8px 5px 8px;
+  }
+  .input-label {
+    font-size: 16px;
+    margin: 25px 0 10px 0;
+    text-align: center;
+  }
+  input {
+    width: 95%;
+    height: 50px;
+    font-size: 16px;
+    margin: 5px;
+    border: #000 px solid;
+    border-radius: 10px;
+  }
+  .buttons{
+    display: flex;
+  }
+  button {
+    margin: 10px;
+    padding: 5px 25px;
+    font-size: 1.4em;
+    background-image: linear-gradient(180deg, #fff, rgb(68, 64, 64));
+    box-shadow: inset 0 4px 1px #c7c2b5, 
+    inset -4px 0 1px #5c4908,
+      inset 0 -4px 1px rgba(93, 85, 32, 0.5),
+      inset 4px 0 1px rgba(110, 98, 69, 0.6);
+  }
+
+  @media  (min-width: 300px) and (max-width:1200px){
+    button {
+      padding: 5px 15px;
+      font-size: 0.9em;
+     
+}
+
+  }
+
+  @media only screen and (max-width:400px){
+   
+    .phone-cont {
+      width: 80%;
+
+        height: 80vh;
+       
+      }
+
+      .input-area {
+       
+        height: 75%;
+       
+      }
+      
+}
+
+  @media (min-width: 400px) and (max-width:600px){
+   
+    .phone-cont {
+      width: 80%;
+
+        height: 75vh;
+       
+      }
+
+      .input-area {
+
+        height: 75%;
+       
+      }
+  }
+
+  @media (min-width: 600px) and (max-width:800px){
+   
+    .phone-cont {
+      width: 60%;
+
+        height: 75vh;
+       
+      }
+
+      .input-area {
+
+        height: 75%;
+       
+      }
+
+      
+  }
+
+  @media (min-width: 800px) and (max-width:1200px){
+   
+    .phone-cont {
+      width: 80%;
+
+        height:60vh;
+       
+      }
+
+      .input-area {
+       
+        height: 80%;
+       
+      }
+
+      
+  }

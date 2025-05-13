@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/palindrome.css" />
+     <!---------FAVICON------------>
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+     <link
+       rel="shortcut icon"
+       type="image/png"
+       sizes="32x32"
+       href="/favicon-32x32.png"
+     />
+     <link
+       rel="shortcut icon"
+       type="image/png"
+       sizes="16x16"
+       href="/favicon-16x16.png"
+     />
+     <link rel="manifest" href="/site.webmanifest" />
+     <!-----------FONTAWESOME--------->
+    <script
+    src="https://kit.fontawesome.com/98419d1ec4.js"
+    crossorigin="anonymous"
+  ></script>
+ 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Palindrome Checker</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Is it a Palindrome?</h1>
+      <form class="row pb-3">
+        <div class="box-one pt-3 pb-3 col-md-12 col-sm-12">
+          <label for="text-input" class="box-one-text form-label"
+            >Enter text to check for a palindrome:</label
+          >
+          <input id="text-input" class="form-control" />
+        </div>
+        <div class="col-md-12 col-sm-12 text-center">
+          <button class="check text-center" id="check-btn" type="button">
+            Check
+          </button>
+        </div>
+      </form>
+      <div class="card text-center m-3" >
+        <div id="result"></div>
+      </div>
+
+      <div class="box-two pt-5 card" >
+        <p class="box-two-text card-body">
+          A palindrome is a word or sentence that's spelled the same way both
+          forward and backward, ignoring punctuation, case, and spacing.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/palindrome.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
